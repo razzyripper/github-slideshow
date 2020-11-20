@@ -1,13 +1,57 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="utf-8">
+    <title>Kostka</title>
+    <link rel="stylesheet" href="styly.css">
+  </head>
+  <body>
+  <div class="allPage">
+    <div class="playground">
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+
+      <div class="totalScore totalScore0 active">
+        <p id="name-0">Score 1. hráče</p>
+        <p id="totalScorePlayer-0">30</p>
+
+      </div>
+      <div class="totalScore totalScore1">
+        <p id="name-1">Score 2. hráče</p>
+        <p id="totalScorePlayer-1">40</p>
+      </div>
+
+      <div class="currentScore currentScore0">
+        <p>Současné score</p>
+        <p id="currentScore0">3</p>
+
+      </div>
+
+      <div class="currentScore currentScore1">
+        <p>Současné score</p>
+        <p id="currentScore1">3</p>
+
+      </div>
+
+      <div id="middleText">
+        <p id="btn1">Hodit kostkou</p>
+        <p id="btn2">Podržet score</p>
+        <p id="btn3">Nová hra</p>
+
+      </div>
+
+      <div class="dice">
+
+        <img src="jpg/1.jpg" alt="" class="diceImage">
+
+
+      </div>
+
+      </div>
+      </div>
+
+
+  </body>
+  <script <script src="script.js"></script>
+
+  </script>
+</html>
